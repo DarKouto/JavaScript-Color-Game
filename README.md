@@ -1,2 +1,3 @@
 # JavaScript-Color-Game
-A RGB Color Game made with JavaScript
+A RGB Color Guessing Game made with JavaScript
+
