@@ -12,7 +12,6 @@ var numSquares = 6;
 // *************************
 
 
-
 // ***** FUNÇÕES *****
 // Dá valores random entre 0 e 255 a uma váriavel "red", outra "green", e outra "blue".
 function randomColor() { 
@@ -85,8 +84,7 @@ reset.addEventListener("click", function() {
     resetDisplay();
     colors = generateRandomColors(numSquares); // gerar cores totalmente novas
     pickedColor = pickColor();  // ir ao array escolher uma nova cor correcta 
-    colorDisplay.textContent = pickedColor;  // mudar o display do h1 com o codigo da cor certa
-    
+    colorDisplay.textContent = pickedColor;  // mudar o display do h1 com o codigo da cor certa  
     for (var i=0; i<squares.length; i++) { // voltar a desenhar os quadrados
         squares[i].style.backgroundColor = colors[i];
     }
@@ -100,9 +98,7 @@ easyBtn.addEventListener("click", function() {
     numSquares = 3;
     easyBtn.classList.add("selected");
     hardBtn.classList.remove("selected");
-    
     resetDisplay();
-
     colors = generateRandomColors(numSquares);
     pickedColor = pickColor();
     colorDisplay.textContent = pickedColor;
@@ -124,9 +120,7 @@ hardBtn.addEventListener("click", function() {
     numSquares = 6;
     easyBtn.classList.remove("selected");
     hardBtn.classList.add("selected");
-
     resetDisplay();
-
     colors = generateRandomColors(numSquares);
     pickedColor = pickColor();
     colorDisplay.textContent = pickedColor;
