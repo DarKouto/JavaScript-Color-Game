@@ -1,0 +1,76 @@
+body {
+    background-color: #232323;
+    margin: 0; /* para apagar as margins todas tenho que meter 0 no body e no h1 */
+    font-family: "Montserrat", "Avenir";
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    background-color: steelblue;
+    margin: 0; /* para apagar as margins todas tenho que meter 0 no body e no h1 */
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding: 20px 0; /* padding-top e bottom é 20px, e 0 no left and right */
+}
+
+.square {  /* ver o projecto do porfolio das fotografias a preto e branco... */
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 15%; /* dá os cantos arredondados, se for 50% transforma em circulos */
+    transition: background 0.5s; /* neste caso só aplica a transição quando o background muda, em vez de ser all */
+
+    /* Estas 2 linhas são para adicionar suporte a outros browsers, Safari e Mozilla respectivamente */
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+}
+
+#container {
+    width: 600px;
+    margin: 20px auto; /* margem 20px no top e bottom, e auto entre esquerda e direita, que automaticamente centra */
+}
+
+#stripe {
+    background: white;
+    height: 30px;
+    text-align: center;
+}
+
+.selected {
+    color: white;
+    background: steelblue;
+}
+
+#colorDisplay {
+    font-size: 200%;
+}
+
+button {
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    height: 100%; /* ocupa 100% da div, preenche tudo */
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    outline: none; /* retira a linha à volta do botão clicado.
+    transition: all 0.3s; /* all significa que sempre que uma propriedade muda, seja ela qual for (all) ele tem um atraso de 0.3 segundos */
+
+    /* Estas 2 linhas são para adicionar suporte a outros browsers, Safari e Mozilla respectivamente */
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+button:hover {
+    color: white;
+    background: steelblue;
+}
+
+#message {
+    display: inline-block; /* isto é para ela aparecer/existir */
+    width: 15%; /* usei 15% em vez de 20 porque no ecra grande ficava melhor, as % sao responsive, os px sao absolutos. */
+}
