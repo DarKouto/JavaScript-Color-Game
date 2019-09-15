@@ -9,7 +9,6 @@ var title = document.querySelector("h1");
 var resetBtn = document.querySelector("#reset");
 var easyBtn = document.getElementById("easyBtn");
 var hardBtn = document.getElementById("hardBtn");
-// *************************
 
 
 // ***** FUNCTIONS *****
@@ -17,7 +16,6 @@ function randomColor() {
     var red = Math.floor(Math.random() * 256);
     var green = Math.floor(Math.random() * 256);
     var blue = Math.floor(Math.random() * 256);
-    // Tenho que escrever 256 em vez de 255 porque o math.floor arredonda sempre para baixo, logo nunca daria 255. Assim nunca dá 256.
     return "rgb(" + red + ", " + green + ", " + blue + ")";
 }
 
@@ -26,7 +24,7 @@ function generateRandomColors(num) {
     for (var i=0; i<num; i++) {
         arr.push(randomColor());
     }
-    return arr; // Retorna o array.
+    return arr;
 }
 
 function pickColor() {
@@ -45,9 +43,9 @@ function resetDisplay() {
     messageDisplay.textContent = "";
     reset.textContent = "New Colors";
 }
-// *************************
 
 
+// ***** CODE *****
 colorDisplay.textContent = pickedColor;
 
 for (var i=0; i < squares.length; i++) {
@@ -67,8 +65,6 @@ for (var i=0; i < squares.length; i++) {
         } 
     });
 }
-// *************************
-
 
 
 // ***** RESET ****
@@ -83,7 +79,6 @@ resetBtn.addEventListener("click", function() {
     }
    
 });
-// *************************
 
 
 // ***** EASY ****
@@ -107,7 +102,6 @@ easyBtn.addEventListener("click", function() {
         }
     }
 });
-// *************************
 
 
 //***** HARD *****
