@@ -1,4 +1,7 @@
 # JavaScript Color Game
+
+Live Version at: https://darkouto.github.io/JavaScript-Color-Game/.
+
 A RGB Color Guessing Game made with JavaScript
 
 This project is part of a Web Development course I took. This part focuses specifically on JavaScript Programming.
