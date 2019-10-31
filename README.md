@@ -1,6 +1,6 @@
 # JavaScript Color Game
 
-Live Version at: https://darkouto.github.io/JavaScript-Color-Game/.
+Live Version at: https://darkouto.github.io/JavaScript-Color-Game/colorGame.html
 
 A RGB Color Guessing Game made with JavaScript
 
